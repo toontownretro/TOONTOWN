@@ -76,7 +76,7 @@ class DistributedPhysicsWorldBase:
 
         if self.canRender:
             for pair in self.odePandaRelationList:
-                pair[0].remove()
+                pair[0].removeNode()
                 pair[1].destroy()
             del self.odePandaRelationList
         else:
@@ -84,11 +84,11 @@ class DistributedPhysicsWorldBase:
                 body[1].destroy()
             del self.bodyList
 
-        self.placerNode.remove()
-        self.root.remove()
+        self.placerNode.removeNode()
+        self.root.removeNode()
 
         for marker in self.jointMarkers:
-            marker.remove()
+            marker.removeNode()
         del self.jointMarkers
 
         self.world.destroy()

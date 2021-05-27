@@ -989,7 +989,7 @@ class CogdoMazeAudioManager(DirectObject):
 
         self.music = {}
         for name, file in list(CogdoMazeGameGlobals.MusicFiles.items()):
-            self.music[name] = base.loadMusic(file)
+            self.music[name] = base.loader.loadMusic(file)
 
         self.sfx = {}
         for name, file in list(CogdoMazeGameGlobals.SfxFiles.items()):

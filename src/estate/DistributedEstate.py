@@ -96,7 +96,7 @@ class DistributedEstate(DistributedObject.DistributedObject):
 
         self.loadFlowerSellBox()
         # load music
-        #self.music = base.loadMusic(self.bgm)
+        #self.music = base.loader.loadMusic(self.bgm)
         # Start music
         #base.playMusic(self.music, looping = 1, volume = 1)
 

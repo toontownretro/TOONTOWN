@@ -375,7 +375,7 @@ class DistributedMazeGame(DistributedMinigame):
         #self.treasureModel.setP(-80) # tilt the mickey heads toward the camera
         self.treasureModel.setP(-90)
 
-        self.music = base.loadMusic(
+        self.music = base.loader.loadMusic(
             "phase_4/audio/bgm/MG_toontag.mid"
             #"phase_4/audio/bgm/TC_SZ.mid"
             )
@@ -463,17 +463,17 @@ class DistributedMazeGame(DistributedMinigame):
             "falling"   : [None] * self.numPlayers,
             }
         for i in range(self.numPlayers):
-            self.sndTable["hitBySuit"][i] =  base.loadSfx(
+            self.sndTable["hitBySuit"][i] =  base.loader.loadSfx(
                 "phase_4/audio/sfx/MG_Tag_C.mp3"
                 #"phase_4/audio/sfx/MG_cannon_fire_alt.mp3"
                 )
-            self.sndTable["falling"][i] = base.loadSfx(
+            self.sndTable["falling"][i] = base.loader.loadSfx(
                 "phase_4/audio/sfx/MG_cannon_whizz.mp3")
 
         # load a few copies of the grab sound
         self.grabSounds = []
         for i in range(5):
-            self.grabSounds.append(base.loadSfx(
+            self.grabSounds.append(base.loader.loadSfx(
                 "phase_4/audio/sfx/MG_maze_pickup.mp3"
                 ))
         # play the sounds round-robin

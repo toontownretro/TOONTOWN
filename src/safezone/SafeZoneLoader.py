@@ -72,8 +72,8 @@ class SafeZoneLoader(StateData.StateData):
 
     def load(self):
         assert(self.notify.debug("load()"))
-        self.music = base.loadMusic(self.musicFile)
-        self.activityMusic = base.loadMusic(self.activityMusicFile)
+        self.music = base.loader.loadMusic(self.musicFile)
+        self.activityMusic = base.loader.loadMusic(self.activityMusicFile)
         self.createSafeZone(self.dnaFile)
         self.parentFSMState.addChild(self.fsm)
 

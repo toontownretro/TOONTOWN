@@ -686,8 +686,8 @@ class DistributedGolfHole(DistributedPhysicsWorld.DistributedPhysicsWorld, FSM, 
 
     def cleanupGeom(self):
         """Cleanup all the geometry we create."""
-        self.targets.remove()
-        self.terrainModel.remove()
+        self.targets.removeNode()
+        self.terrainModel.removeNode()
         self.powerBar.destroy()
 
     def cleanupPowerBar(self):

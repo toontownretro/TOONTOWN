@@ -39,7 +39,7 @@ class DistributedGag(DistributedObject.DistributedObject):
 
         self.nodePath.reparentTo(self.race.geom)
         if(self.ownerId==localAvatar.doId):
-            base.race.thrownGags[0].remove()
+            base.race.thrownGags[0].removeNode()
             base.race.thrownGags=base.race.thrownGags[1:]
             self.nodePath.setPos(self.pos[0], self.pos[1], self.pos[2])
         else:
@@ -70,7 +70,7 @@ class DistributedGag(DistributedObject.DistributedObject):
             base.race.localKart.hitPie()
         self.nodePath.hide()
         if(hasattr(self, "bnp")):
-            self.bnp.remove()
+            self.bnp.removeNode()
 
     def hitSomebody(self, kartId, timeStamp):
         if(base.race.localKart.doId!=kartId):
@@ -78,7 +78,7 @@ class DistributedGag(DistributedObject.DistributedObject):
             #Okay, this is correct
             self.nodePath.hide()
             if(hasattr(self, "bnp")):
-                self.bnp.remove()
+                self.bnp.removeNode()
             base.cr.doId2do[kartId].playSpin(timeStamp)
 
     def setActivateTime(self, actTime):

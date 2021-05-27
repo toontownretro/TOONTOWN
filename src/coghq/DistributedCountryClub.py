@@ -89,7 +89,7 @@ class DistributedCountryClub(DistributedObject.DistributedObject):
     def stopSky(self):
         # Remove the sky task just in case it was spawned.
         taskMgr.remove("skyTrack")
-        self.sky.remove()#reparentTo(hidden)
+        self.sky.removeNode()#reparentTo(hidden)
 
     def __setupHighSky(self):
         self.startSky()

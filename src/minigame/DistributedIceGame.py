@@ -217,7 +217,7 @@ class DistributedIceGame(DistributedMinigame.DistributedMinigame,
         # load resources and create objects here
         self.notify.debug("load")
         DistributedMinigame.DistributedMinigame.load(self)
-        self.music = base.loadMusic("phase_4/audio/bgm/MG_IceGame.mid")
+        self.music = base.loader.loadMusic("phase_4/audio/bgm/MG_IceGame.mid")
         #self.gameBoard = loader.loadModel("phase_4/models/minigames/toon_cannon_gameground")
         self.gameBoard = loader.loadModel("phase_4/models/minigames/ice_game_icerink")
         #background = loader.loadModel("phase_4/models/minigames/ice_game")

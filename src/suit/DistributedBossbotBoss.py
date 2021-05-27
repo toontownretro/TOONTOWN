@@ -237,17 +237,17 @@ class DistributedBossbotBoss(DistributedBossCog.DistributedBossCog, FSM.FSM):
         self.geom.reparentTo(render)
 
         # before battles: play the boss theme music
-        self.promotionMusic = base.loadMusic(
+        self.promotionMusic = base.loader.loadMusic(
             'phase_7/audio/bgm/encntr_suit_winning_indoor.mid')
             # 'phase_9/audio/bgm/encntr_head_suit_theme.mid')
 
         # Between  major phases, play the upbeat street battle music
-        self.betweenPhaseMusic = base.loadMusic(
+        self.betweenPhaseMusic = base.loader.loadMusic(
             'phase_9/audio/bgm/encntr_toon_winning.mid')
         # Battle two: play new jury music
-        self.phaseTwoMusic = base.loadMusic(
+        self.phaseTwoMusic = base.loader.loadMusic(
             'phase_12/audio/bgm/BossBot_CEO_v1.mid')
-        self.phaseFourMusic = base.loadMusic(
+        self.phaseFourMusic = base.loader.loadMusic(
            'phase_12/audio/bgm/BossBot_CEO_v2.mid')
 
         self.pickupFoodSfx = loader.loadSfx('phase_6/audio/sfx/SZ_MM_gliss.mp3')

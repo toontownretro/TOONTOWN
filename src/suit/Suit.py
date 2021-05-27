@@ -401,7 +401,7 @@ def loadTutorialSuit():
     """
     Preload the tutorial suit (Flunky)
     """
-    loader.loadModelNode("phase_3.5/models/char/suitC-mod")
+    loader.loadModel("phase_3.5/models/char/suitC-mod").node()
     loadDialog(1)
 
 def loadSuits(level):
@@ -431,11 +431,11 @@ def loadSuitModelsAndAnims(level, flag = 0):
         model, phase = ModelDict[key]
         headModel, headPhase = ModelDict[key]
         if flag:
-            loader.loadModelNode("phase_3.5" + model + "mod")
-            loader.loadModelNode("phase_" + str(headPhase) + headModel + "heads")
+            loader.loadModel("phase_3.5" + model + "mod").node()
+            loader.loadModel("phase_" + str(headPhase) + headModel + "heads").node()
         else:
-            loader.unloadModel("phase_3.5" + model + "mod")
-            loader.unloadModel("phase_" + str(headPhase) + headModel + "heads")
+            loader.loadModel("phase_3.5" + model + "mod").node()
+            loader.loadModel("phase_" + str(headPhase) + headModel + "heads").node()
 
 def loadSuitAnims(suit, flag = 1):
     """loadSuitAnims(string, int):
@@ -460,7 +460,7 @@ def loadSuitAnims(suit, flag = 1):
         filePrefix = ModelDict[bodyType][0]
         animName = filePrefix + anim[1]
         if flag:
-            loader.loadModelNode(animName)
+            loader.loadModel(animName).node()
         else:
             loader.unloadModel(animName)
 
@@ -479,7 +479,7 @@ def loadDialog(level):
                             ]
         # load the audio files and store into the dialogue array
         for file in SuitDialogFiles:
-            SuitDialogArray.append(base.loadSfx(loadPath + file + ".mp3"))
+            SuitDialogArray.append(base.loader.loadSfx(loadPath + file + ".mp3"))
         SuitDialogArray.append(SuitDialogArray[2])
         SuitDialogArray.append(SuitDialogArray[2])
 

@@ -79,15 +79,15 @@ class PairingGameCard(PlayingCardNodePath):
         logo.setX(-0.05)
         logo.setH(180)
 
-        cardModel.remove()
+        cardModel.removeNode()
 
         self.setR(0) # the default value is face Up
         self.setScale(2.5)
 
         self.flipIval = None
 
-        self.turnUpSound = base.loadSfx("phase_4/audio/sfx/MG_pairing_card_flip_face_up.mp3")
-        self.turnDownSound = base.loadSfx("phase_4/audio/sfx/MG_pairing_card_flip_face_down.mp3")
+        self.turnUpSound = base.loader.loadSfx("phase_4/audio/sfx/MG_pairing_card_flip_face_up.mp3")
+        self.turnDownSound = base.loader.loadSfx("phase_4/audio/sfx/MG_pairing_card_flip_face_down.mp3")
 
     def unload(self):
         """Unload the assets."""

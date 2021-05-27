@@ -190,6 +190,7 @@ class ToonBase(OTPBase.OTPBase):
         self.wantBingo = self.config.GetBool('want-fish-bingo', 1)
         self.wantKarts = self.config.GetBool('want-karts', 1)
         self.wantNewSpecies = self.config.GetBool('want-new-species', 0)
+        print('### want new species = ', self.wantNewSpecies)
 
         # tell panda to ignore repeated key presses
         self.inactivityTimeout = self.config.GetFloat("inactivity-timeout", ToontownGlobals.KeyboardTimeout)
@@ -409,9 +410,9 @@ class ToonBase(OTPBase.OTPBase):
 
         arrow = loader.loadModel('phase_3/models/props/arrow')
         card = loader.loadModel('phase_3/models/props/panel')
-        speech3d = ChatBalloon(loader.loadModelNode('phase_3/models/props/chatbox'))
-        thought3d = ChatBalloon(loader.loadModelNode('phase_3/models/props/chatbox_thought_cutout'))
-        speech2d = ChatBalloon(loader.loadModelNode('phase_3/models/props/chatbox_noarrow'))
+        speech3d = ChatBalloon(loader.loadModel('phase_3/models/props/chatbox').node())
+        thought3d = ChatBalloon(loader.loadModel('phase_3/models/props/chatbox_thought_cutout').node())
+        speech2d = ChatBalloon(loader.loadModel('phase_3/models/props/chatbox_noarrow').node())
 
         chatButtonGui = loader.loadModel("phase_3/models/gui/chat_button_gui")
 

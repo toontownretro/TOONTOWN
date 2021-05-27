@@ -93,7 +93,7 @@ class DistributedDivingGame(DistributedMinigame):
         loadBase = "phase_4/models/minigames/"
         loadBaseShip = "phase_5/models/props/"
 
-        self.sndAmbience = base.loadSfx(
+        self.sndAmbience = base.loader.loadSfx(
             'phase_4/audio/sfx/AV_ambient_water.mp3')
 
         self.environModel = loader.loadModel(loadBase + "diving_game.bam")
@@ -165,7 +165,7 @@ class DistributedDivingGame(DistributedMinigame):
         hitSoundPath = ("phase_4/audio/sfx/%s" % (hitSoundName))
         self.hitSound = loader.loadSfx(hitSoundPath)
 
-        self.music = base.loadMusic("phase_4/audio/bgm/MG_Target.mid")
+        self.music = base.loader.loadMusic("phase_4/audio/bgm/MG_Target.mid")
 
         self.addSound('dropGold', "diving_treasure_drop_off.mp3", "phase_4/audio/sfx/")
         self.addSound('getGold', "diving_treasure_pick_up.mp3", "phase_4/audio/sfx/")

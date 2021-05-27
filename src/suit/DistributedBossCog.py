@@ -727,10 +727,10 @@ class DistributedBossCog(DistributedAvatar.DistributedAvatar,
         if self.rightDoor.isEmpty():
             self.rightDoor = self.elevatorModel.find("**/right_door")
 
-        self.openSfx = base.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_sliding.mp3")
-        self.finalOpenSfx = base.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_final.mp3")
-        self.closeSfx = base.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_sliding.mp3")
-        self.finalCloseSfx = base.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_final.mp3")
+        self.openSfx = base.loader.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_sliding.mp3")
+        self.finalOpenSfx = base.loader.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_final.mp3")
+        self.closeSfx = base.loader.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_sliding.mp3")
+        self.finalCloseSfx = base.loader.loadSfx("phase_9/audio/sfx/CHQ_FACT_door_open_final.mp3")
         self.openDoors = ElevatorUtils.getOpenInterval(self, self.leftDoor, self.rightDoor,
                                                        self.openSfx, self.finalOpenSfx,
                                                        self.elevatorType)
@@ -1266,20 +1266,20 @@ class DistributedBossCog(DistributedAvatar.DistributedAvatar,
 
     def loadEnvironment(self):
         # Elevator: play the introduction-to-danger sting
-        self.elevatorMusic = base.loadMusic(
+        self.elevatorMusic = base.loader.loadMusic(
             'phase_7/audio/bgm/tt_elevator.mid')
-        self.stingMusic = base.loadMusic(
+        self.stingMusic = base.loader.loadMusic(
             'phase_7/audio/bgm/encntr_suit_winning_indoor.mid')
             #'phase_9/audio/bgm/encntr_sting_announce.mid')
         # Battle one: play the standard street battle music
-        self.battleOneMusic = base.loadMusic(
+        self.battleOneMusic = base.loader.loadMusic(
             'phase_3.5/audio/bgm/encntr_general_bg.mid')
         # Battle three: play the final boss battle music
-        self.battleThreeMusic = base.loadMusic(
+        self.battleThreeMusic = base.loader.loadMusic(
             'phase_7/audio/bgm/encntr_suit_winning_indoor.mid')
             # 'phase_9/audio/bgm/encntr_suit_winning.mid')
         # Reward: play the reward music
-        self.epilogueMusic = base.loadMusic(
+        self.epilogueMusic = base.loader.loadMusic(
             'phase_9/audio/bgm/encntr_hall_of_fame.mid')
             #'phase_9/audio/bgm/CogHQ_finale.mid')
 

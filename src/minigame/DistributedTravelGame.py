@@ -189,12 +189,12 @@ class DistributedTravelGame(DistributedMinigame):
         self.minigameIcons = []
         self.bonusLabels = []
 
-        self.trolleyAwaySfx = base.loadSfx("phase_4/audio/sfx/SZ_trolley_away.mp3")
-        self.trolleyBellSfx = base.loadSfx("phase_4/audio/sfx/SZ_trolley_bell.mp3")
-        self.turntableRotateSfx = base.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_turntble_rotate_2.mp3")
-        self.wonGameSfx = base.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_bonus.mp3")
-        self.lostGameSfx = base.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_no_bonus_2.mp3")
-        self.noWinnerSfx = base.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_no_bonus.mp3")
+        self.trolleyAwaySfx = base.loader.loadSfx("phase_4/audio/sfx/SZ_trolley_away.mp3")
+        self.trolleyBellSfx = base.loader.loadSfx("phase_4/audio/sfx/SZ_trolley_bell.mp3")
+        self.turntableRotateSfx = base.loader.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_turntble_rotate_2.mp3")
+        self.wonGameSfx = base.loader.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_bonus.mp3")
+        self.lostGameSfx = base.loader.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_no_bonus_2.mp3")
+        self.noWinnerSfx = base.loader.loadSfx("phase_4/audio/sfx/MG_sfx_travel_game_no_bonus.mp3")
 
         self.boardIndex = 0 # which board layour are we using
 
@@ -340,7 +340,7 @@ class DistributedTravelGame(DistributedMinigame):
         self.loadGui()
         self.introMovie = self.getIntroMovie()
 
-        self.music = base.loadMusic("phase_4/audio/bgm/MG_Travel.mid")
+        self.music = base.loader.loadMusic("phase_4/audio/bgm/MG_Travel.mid")
         self.flashWinningBeansTrack = None
 
     def loadTrainTrack(self, x1, y1, x2, y2, zAdj = 0):

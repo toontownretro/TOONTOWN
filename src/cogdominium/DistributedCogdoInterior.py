@@ -31,8 +31,8 @@ class DistributedCogdoInterior(DistributedObject.DistributedObject):
         self.toons = []
         self.activeIntervals = {}
 
-        self.openSfx = base.loadSfx("phase_5/audio/sfx/elevator_door_open.mp3")
-        self.closeSfx = base.loadSfx("phase_5/audio/sfx/elevator_door_close.mp3")
+        self.openSfx = base.loader.loadSfx("phase_5/audio/sfx/elevator_door_open.mp3")
+        self.closeSfx = base.loader.loadSfx("phase_5/audio/sfx/elevator_door_close.mp3")
 
         self.suits = []
         self.reserveSuits = []
@@ -71,9 +71,9 @@ class DistributedCogdoInterior(DistributedObject.DistributedObject):
                          ]
         self.BossOffice_SuitHs = [170, 120, 12, 38]
 
-        self.waitMusic = base.loadMusic(
+        self.waitMusic = base.loader.loadMusic(
             'phase_7/audio/bgm/encntr_toon_winning_indoor.mid')
-        self.elevatorMusic = base.loadMusic(
+        self.elevatorMusic = base.loader.loadMusic(
             'phase_7/audio/bgm/tt_elevator.mid')
 
         self.fsm = ClassicFSM.ClassicFSM('DistributedCogdoInterior',

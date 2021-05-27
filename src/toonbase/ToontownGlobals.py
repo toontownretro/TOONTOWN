@@ -8,6 +8,11 @@ from otp.otpbase.OTPGlobals import *
 from direct.showbase.PythonUtil import Enum, invertDict
 from toontown.toonbase.ToontownModules import BitMask32, Vec4
 
+# Questmap Update
+MapHotkeyOn = "alt"
+MapHotkeyOff = "alt-up"
+MapHotkey = "alt"
+
 AccountDatabaseChannelId = 4008
 ToonDatabaseChannelId = 4021
 DoodleDatabaseChannelId = 4023
@@ -671,6 +676,30 @@ MinigamePlayerMatrix = {
          IceGameId, CogThiefGameId, PhotoGameId, TwoDGameId),
     }
 
+# USE ONLY WHEN DECIDED TO REMOVE THE PHOTOGAME!
+"""
+# Minigame Id list
+MinigamePlayerMatrix = {
+    # If you only have one player, choose from these games
+    # Technically pattern game can be single player, but it is not nearly as fun, especially for demos
+    1 : (CannonGameId, RingGameId, MazeGameId, TugOfWarGameId, CatchGameId,
+         DivingGameId, TargetGameId, PairingGameId, VineGameId,
+         CogThiefGameId, TwoDGameId),
+    # If you have exactly two players, choose from these games
+    2 : (CannonGameId, PatternGameId, RingGameId, TagGameId, MazeGameId, TugOfWarGameId, CatchGameId,
+         DivingGameId, TargetGameId, PairingGameId, VineGameId,
+         IceGameId, CogThiefGameId, TwoDGameId),
+    # If you have exactly three players, choose from these games
+    3 : (CannonGameId, PatternGameId, RingGameId, TagGameId, RaceGameId, MazeGameId, TugOfWarGameId, CatchGameId,
+         DivingGameId, TargetGameId, PairingGameId, VineGameId,
+         IceGameId, CogThiefGameId, TwoDGameId),
+    # If you have exactly four players, choose from these games
+    4 : (CannonGameId, PatternGameId, RingGameId, TagGameId, RaceGameId, MazeGameId, TugOfWarGameId, CatchGameId,
+         DivingGameId, TargetGameId, PairingGameId, VineGameId,
+         IceGameId, CogThiefGameId, TwoDGameId),
+    }
+"""
+
 # we are releasing one minigame a week for the new minigames
 MinigameReleaseDates = {
     IceGameId : (2008, 8, 0o5),
@@ -1206,6 +1235,49 @@ NUMBER_CRUNCHER_INVASION = 93
 SILLY_CHATTER_FIVE = 94
 
 VICTORY_PARTY_HOLIDAY = 95
+
+SELLBOT_NERF_HOLIDAY = 96
+
+JELLYBEAN_TROLLEY_HOLIDAY = 97
+JELLYBEAN_FISHING_HOLIDAY = 98
+JELLYBEAN_PARTIES_HOLIDAY = 99
+
+BANK_UPGRADE_HOLIDAY = 100
+
+TOP_TOONS_MARATHON = 101
+
+SELLBOT_INVASION = 102
+SELLBOT_FIELD_OFFICE = 103
+SELLBOT_INVASION_MOVER_AND_SHAKER = 104
+
+IDES_OF_MARCH = 105
+
+EXPANDED_CLOSETS = 106
+
+TAX_DAY_INVASION = 107
+
+LAWBOT_NERF_HOLIDAY = 108
+
+KARTING_TICKETS_HOLIDAY = 109
+
+PRE_JULY_4_DOWNSIZER_INVASION = 110
+PRE_JULY_4_BIGWIG_INVASION = 111
+
+COMBO_FIREWORKS = 112
+
+JELLYBEAN_TROLLEY_HOLIDAY_MONTH = 113
+JELLYBEAN_FISHING_HOLIDAY_MONTH = 114
+JELLYBEAN_PARTIES_HOLIDAY_MONTH = 115
+
+SILLYMETER_EXT_HOLIDAY = 116
+
+SPOOKY_BLACK_CAT = 117
+SPOOKY_TRICK_OR_TREAT = 118
+SPOOKY_PROPS = 119
+SPOOKY_COSTUMES = 120
+
+WACKY_WINTER_DECORATIONS = 121
+WACKY_WINTER_CAROLING = 122
 
 # Trick or Treat Holiday Values
 TOT_REWARD_JELLYBEAN_AMOUNT = 100

@@ -73,7 +73,7 @@ class MinigamePhysicsWorldBase:
 
         if self.canRender:
             for pair in self.odePandaRelationList:
-                pair[0].remove()
+                pair[0].removeNode()
                 pair[1].destroy()
             self.odePandaRelationList = None
         else:
@@ -93,11 +93,11 @@ class MinigamePhysicsWorldBase:
             ray.destroy()
             ray = None
 
-        self.placerNode.remove()
-        self.root.remove()
+        self.placerNode.removeNode()
+        self.root.removeNode()
 
         for marker in self.jointMarkers:
-            marker.remove()
+            marker.removeNode()
         self.jointMarkers = None
 
         for data in self.geomDataList:

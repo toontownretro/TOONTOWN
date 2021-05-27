@@ -443,7 +443,7 @@ class DistributedTargetGame(DistributedMinigame):
 
 
         self.scoreboard.hide()
-        self.music = base.loadMusic("phase_4/audio/bgm/MG_Diving.mid")
+        self.music = base.loader.loadMusic("phase_4/audio/bgm/MG_Diving.mid")
         #self.music = None
 
         self.sndAmbience = None
@@ -799,7 +799,7 @@ class DistributedTargetGame(DistributedMinigame):
         self.removeChildGameFSM(self.gameFSM)
         del self.gameFSM
         if self.targets:
-            self.targets.remove()
+            self.targets.removeNode()
         del self.targets
         self.scoreboard.destroy()
         del self.scoreboard

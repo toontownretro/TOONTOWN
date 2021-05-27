@@ -96,9 +96,9 @@ class TownLoader(StateData.StateData):
         self.branchZone = ZoneUtil.getBranchZone(zoneId)
         self.canonicalBranchZone = ZoneUtil.getCanonicalBranchZone(zoneId)
         # Load the music:
-        self.music = base.loadMusic(self.musicFile)
-        self.activityMusic = base.loadMusic(self.activityMusicFile)
-        self.battleMusic = base.loadMusic(
+        self.music = base.loader.loadMusic(self.musicFile)
+        self.activityMusic = base.loader.loadMusic(self.activityMusicFile)
+        self.battleMusic = base.loader.loadMusic(
                 'phase_3.5/audio/bgm/encntr_general_bg.mid')
         # Load the battle UI:
         self.townBattle = TownBattle.TownBattle(self.townBattleDoneEvent)

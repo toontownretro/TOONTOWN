@@ -51,6 +51,9 @@ AnimDict = {
           ("neutral", "neutral", 6),
           ("trans-back", "transBack", 6),
           ),
+    "fd": (("walk", "walk", 6),
+          ("neutral", "idle", 6)
+          ),
     "dw": (("wheel", "wheel", 6),
               ("neutral", "wheel", 6),
            ),
@@ -68,10 +71,19 @@ AnimDict = {
     "dd" : (("walk", "walk", 4),
           ("neutral", "idle", 4),
           ),
+    "shdd" : (("walk", "walk", 4),
+          ("neutral", "idle", 4),
+          ),
     "ch" : (("walk", "walk", 6),
           ("neutral", "idle", 6),
           ),
+    "pch" : (("walk", "walk", 6),
+          ("neutral", "idle", 6),
+          ),
     "da" : (("walk", "walk", 6),
+          ("neutral", "idle", 6),
+          ),
+    "jda" : (("walk", "walk", 6),
           ("neutral", "idle", 6),
           ),
     }
@@ -84,13 +96,17 @@ ModelDict = {
     "g" : "phase_6/models/char/TT_G",
     "sg" : "phase_6/models/char/tt_a_chr_csc_goofyCostume_",
     "d" : "phase_6/models/char/DL_donald-",
+    "fd": "phase_6/models/char/tt_a_chr_csc_donaldCostume_",
     "dw": "phase_6/models/char/donald-wheel-",
     "p" : "phase_6/models/char/pluto-",
     "wp" : "phase_6/models/char/tt_a_chr_csc_plutoCostume_",
     "cl": "phase_5.5/models/estate/Clara_pose2-",
     "dd": "phase_4/models/char/daisyduck_",
+    "shdd": "phase_4/models/char/tt_a_chr_csc_daisyCostume_",
     "ch": "phase_6/models/char/chip_",
+    "pch": "phase_6/models/char/tt_a_chr_csc_chipCostume_",
     "da": "phase_6/models/char/dale_",
+    "jda": "phase_6/models/char/tt_a_chr_csc_daleCostume_",
     }
 
 
@@ -103,13 +119,17 @@ LODModelDict = {
     "g" : [1500, 1000, 500],
     "sg": [1200, 800, 400],
     "d" : [1000, 500, 250],
+    'fd': ['default'],
     "dw": [1000],
     "p" : [1000, 500, 300],
     "wp" : [1200, 800, 400],
     "cl": [],
     "dd" : [1600, 800, 400],
+    "shdd": ["default"],
     "ch" : [1000, 500, 250],
+    "pch": ["default"],
     "da" : [1000, 500, 250],
+    "jda": ["default"],
     }
 
 class Char(Avatar.Avatar):
@@ -221,9 +241,9 @@ class Char(Avatar.Avatar):
             height = 4.8
         elif (self._name == "super_goofy"):
             height = 4.8
-        elif (self._name == "donald" or self._name == "donald-wheel"):
+        elif (self._name == "donald" or self._name == "donald-wheel" or self.name == "franken_donald"):
             height = 4.5
-        elif (self._name == "daisy"):
+        elif (self._name == "daisy" or self.name == "sockHop_daisy"):
             height = 4.5
         elif (self._name == "pluto"):
             height = 3.0
@@ -234,6 +254,10 @@ class Char(Avatar.Avatar):
         elif (self._name == "chip"):
             height = 2.0
         elif (self._name == "dale"):
+            height = 2.0
+        elif (self._name == "police_chip"):
+            height = 2.0
+        elif (self._name == "jailbird_dale"):
             height = 2.0
 
         self.lodStrings = []
@@ -336,7 +360,9 @@ class Char(Avatar.Avatar):
             for lodName in self.getLODNames():
                 self.drawInFront("joint_pupil?", "eyes*", -3, lodName=lodName)
         elif (self._name == "witch_minnie" or self._name == "vampire_mickey" \
-                or self._name == "super_goofy" or self._name == "western_pluto"):
+                or self._name == "super_goofy" or self._name == "western_pluto" \
+                or self._name == "police_chip" or self._name == "jailbird_dale" \
+                or self._name == "franken_donald" or self._name == "sockHop_daisy"):
             self.geoEyes = 1
             self.eyeOpenList = []
             self.eyeCloseList = []
@@ -513,7 +539,7 @@ class Char(Avatar.Avatar):
             for fileIndex in audioIndexArray[categoryIndex]:
                 if fileIndex:
                     self.chatterArray[categoryIndex].append(
-                        base.loadSfx("%s/CC_%s_chatter_%s%02d.mp3" %
+                        base.loader.loadSfx("%s/CC_%s_chatter_%s%02d.mp3" %
                                      (loadPath, name, chatterType, fileIndex))
                         )
                 else:
@@ -534,7 +560,7 @@ class Char(Avatar.Avatar):
 
         if (char == "mk"):
             # load Mickey's dialogue array
-            dialogueFile = base.loadSfx("phase_3/audio/dial/mickey.wav")
+            dialogueFile = base.loader.loadSfx("phase_3/audio/dial/mickey.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
             # load Mickey's chatter
@@ -551,7 +577,7 @@ class Char(Avatar.Avatar):
                                          "phase_3/audio/dial", language)
         elif (char == "vmk"):
             # load Mickey's dialogue array
-            dialogueFile = base.loadSfx("phase_3/audio/dial/mickey.wav")
+            dialogueFile = base.loader.loadSfx("phase_3/audio/dial/mickey.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
             # load Mickey's chatter
@@ -568,7 +594,7 @@ class Char(Avatar.Avatar):
                                          "phase_3/audio/dial", language)
         elif (char == "mn" or char == "wmn"):
             # load Minnie's dialogue array
-            dialogueFile = base.loadSfx("phase_3/audio/dial/minnie.wav")
+            dialogueFile = base.loader.loadSfx("phase_3/audio/dial/minnie.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
             # load Minnie's chatter
@@ -585,7 +611,7 @@ class Char(Avatar.Avatar):
                                          "phase_3/audio/dial", language)
         elif (char == "dd"):
             # load Daisy's dialogue array
-            dialogueFile = base.loadSfx("phase_4/audio/dial/daisy.wav")
+            dialogueFile = base.loader.loadSfx("phase_4/audio/dial/daisy.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
             # load Diasy's chatter
@@ -602,7 +628,7 @@ class Char(Avatar.Avatar):
                                          "phase_8/audio/dial", language)
         elif (char == "g" or char == "sg"):
             # load Goofy's dialogue array
-            dialogueFile = base.loadSfx("phase_6/audio/dial/goofy.wav")
+            dialogueFile = base.loader.loadSfx("phase_6/audio/dial/goofy.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
             # load Goofy's chatter
@@ -619,7 +645,7 @@ class Char(Avatar.Avatar):
                                          "phase_6/audio/dial", language)
         elif (char == "d" or char == "dw"):
             # load Donald's dialogue array
-            dialogueFile = base.loadSfx("phase_6/audio/dial/donald.wav")
+            dialogueFile = base.loader.loadSfx("phase_6/audio/dial/donald.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
             if char == 'd':
@@ -637,20 +663,20 @@ class Char(Avatar.Avatar):
                                              "phase_6/audio/dial", language)
         elif (char == "p" or char == "wp"):
             # load Pluto's dialogue array
-            dialogueFile = base.loadSfx("phase_3.5/audio/dial/AV_dog_med.mp3")
+            dialogueFile = base.loader.loadSfx("phase_3.5/audio/dial/AV_dog_med.mp3")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
         elif (char == "cl"):
             # TODO: load Clarabelle's dialog array
-            dialogueFile = base.loadSfx("phase_3.5/audio/dial/AV_dog_med.mp3")
+            dialogueFile = base.loader.loadSfx("phase_3.5/audio/dial/AV_dog_med.mp3")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
         elif (char == "ch"):
-            dialogueFile = base.loadSfx("phase_6/audio/dial/chip.wav")
+            dialogueFile = base.loader.loadSfx("phase_6/audio/dial/chip.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
         elif (char == "da"):
-            dialogueFile = base.loadSfx("phase_6/audio/dial/dale.wav")
+            dialogueFile = base.loader.loadSfx("phase_6/audio/dial/dale.wav")
             for i in range(0,6):
                 self.dialogueArray.append(dialogueFile)
         else:
