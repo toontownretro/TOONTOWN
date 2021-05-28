@@ -59,7 +59,7 @@ resistanceDict = {
                                        TTL.MovieNPCSOSThrow,
                                        TTL.MovieNPCSOSSquirt,
                                        TTL.MovieNPCSOSDrop,
-                                       TTL.MovieNPCSOSAll
+                                       TTL.ResistanceRestockItemAll
                                        ],
                           'items'   : [0, 1, 2, 3, 4, 5, 6, 7],
                           },

@@ -10652,8 +10652,18 @@ startFireworksResponse = "Usage: startFireworksShow [\'num\']\n \
                                         %s - Party Summer \n \
                                         %s - 4th of July"
 
+FireworksValentinesBeginning = lToonHQ+": Happy ValenToons to all lovers!" # Brazil
+FireworksValentinesEnding = lToonHQ+": Hope you enjoyed the show!" # Brazil
+FireworksFebruary14Beginning = lToonHQ+": Happy ValenToons to all lovers!"
+FireworksFebruary14Ending = lToonHQ+": Hope you enjoyed the show!"
 FireworksJuly4Beginning = lToonHQ+": Welcome to summer fireworks! Enjoy the show!"
 FireworksJuly4Ending = lToonHQ+": Hope you enjoyed the show! Have a great summer!"
+FireworksJuly14Beginning = lToonHQ+": July 14 fireworks! Enjoy the fireworks show!"
+FireworksJuly14Ending = lToonHQ+": Hope you enjoyed the show!"
+FireworksOctober31Beginning = lToonHQ+": Happy Halloween!"
+FireworksOctober31Ending = lToonHQ+": Hope you enjoyed the show!"
+FireworksNovember19Beginning = lToonHQ+": Happy Birthday! Toontown turns 1 year old" # Germany
+FireworksNovember19Ending = lToonHQ+": Hope you enjoyed the show!" # Germany
 FireworksNewYearsEveBeginning = lToonHQ+": Happy New Year! Enjoy the fireworks show!"
 FireworksNewYearsEveEnding = lToonHQ+": Hope you enjoyed the show! Happy New Year!"
 FireworksComboBeginning = lToonHQ+": Enjoy lots of Laffs with Toon fireworks!"
