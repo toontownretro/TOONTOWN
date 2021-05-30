@@ -5,6 +5,16 @@ from otp.otpbase import OTPLocalizer as OL
 #for key in OL.SpeedChatStaticTextCommon.keys():
 #    OL.SpeedChatStaticText[key] = OL.SpeedChatStaticTextCommon[key]
 
+# To make sure the language checker is working
+# DO NOT TRANSLATE THIS
+ExtraKeySanityCheck = "Ignore me"
+
+# commit strings
+# No longer in use.
+#commitmanString = "bugfix! I changed this"
+#commitmanSting2 = "another string!"
+#commitmantst = "kptmptest - removable"
+
 InterfaceFont = 'phase_3/models/fonts/ImpressBT.ttf'
 ToonFont = 'phase_3/models/fonts/ImpressBT.ttf'
 SuitFont = 'phase_3/models/fonts/vtRemingtonPortable.ttf'
@@ -49,6 +59,7 @@ UnpaidNameTag = "Basic"
 # GM nametags
 GM_1 = "TOON COUNCIL"
 GM_2 = "TOON TROOP"
+GM_3 = "TOON RESISTANCE"
 
 GM_NAMES = ("TOON COUNCIL",
             "TOON TROOPER",
@@ -6521,6 +6532,8 @@ PartyCatchActivityAnvils      = 'anvils'
 PartyCatchStarted = "The game has started. Go play it."
 PartyCatchCannotStart = "The game could not start right now."
 PartyCatchRewardMessage = "Pieces of fruit caught: %s\n\nJellybeans earned: %s"
+WinterPartyCatchActivityInstructions = "Catch as many presents as you can. Try not to 'catch' any %(badThing)s!"
+WinterPartyCatchRewardMessage = "Presents caught: %s\n\nJellybeans earned: %s"
 
 # DistributedPartyDanceActivity.py
 PartyDanceActivityTitle = "Party Dance Floor"
@@ -8143,8 +8156,8 @@ ShirtStylesDescriptions = {
     'c_ss11' : "cowboy shirt 6 : Series 4",
 
     # Special Holiday-themed shirts.
-    'hw_ss1' : "Halloween ghost",
-    'hw_ss2' : "Halloween pumpkin",
+    'hw_ss1' : "Halloween Ghost",
+    'hw_ss2' : "Halloween Pumpkin",
     'hw_ss3' : "Halloween Vampire",
     'hw_ss4' : "Halloween Turtle",
     'hw_ss5' : "Halloween Bee",
@@ -8160,12 +8173,13 @@ ShirtStylesDescriptions = {
     'vd_ss1' : "girl Valentines day, pink with red hearts (girls)",
     'vd_ss2' : "Valentines day, red with white hearts",
     'vd_ss3' : "Valentines day, white with winged hearts (boys)",
-    'vd_ss4' : " Valentines day, pink with red flamed heart",
+    'vd_ss4' : "Valentines day, pink with red flamed heart",
     'vd_ss5' : "2009 Valentines day, white with red cupid",
     'vd_ss6' : "2009 Valentines day, blue with green and red hearts",
     'vd_ss7' : "2010 Valentines day, red with white wings",
     'sd_ss1' : "St Pat's Day, four leaf clover shirt",
     'sd_ss2' : "St Pat's Day, pot o gold shirt",
+    'sd_ss3' : "Ides of March greenToon shirt",
     'tc_ss1' : "T-Shirt Contest, Fishing Vest",
     'tc_ss2' : "T-Shirt Contest, Fish Bowl",
     'tc_ss3' : "T-Shirt Contest, Paw Print",
@@ -8271,6 +8285,12 @@ ShirtStylesDescriptions = {
     # Doodle Shirt
     'jb_2' : "Doodle Shirt",
 
+    # No longer in use.
+    #'cr_1' : "Mailbox Shirt",
+    #'cr_2' : "Trashcan Shirt",
+    #'cr_3' : "Loony Labs Shirt",
+    #'cr_4' : "Hydrant Shirt",
+
     # Get Connected Shirt
     'ugcms' : "Get Connected Mover & Shaker",
 
@@ -8300,6 +8320,7 @@ BottomStylesDescriptions = {
     'c_bs2' : "Blue with gold cuff stripes",
     'c_bs5' : 'Green stripes - series 7',
     'sd_bs1' : 'St. Pats leprechaun shorts',
+    'sd_bs2' : "Ides of March greenToon shorts",
     'pj_bs1' : 'Blue Banana Pajama pants',
     'pj_bs2' : 'Red Horn Pajama pants',
     'pj_bs3' : 'Purple Glasses Pajama pants',
@@ -9947,27 +9968,27 @@ NPCToonNames = {
     # Funny Farms / Field Office
     #
 
-    9301 : 'Phil Bettur',
-    9302 : 'Emma Phatic',
-    9303 : 'GiggleMesh',
-    9304 : 'Anne Ville',
-    9305 : 'Bud Erfingerz',
-    9306 : 'J.S. Bark',
-    9307 : 'Bea Sharpe',
-    9308 : 'Otto Toon',
-    9309 : 'Al Capella',
-    9310 : 'Des Traction',
-    9311 : 'Dee Version',
-    9312 : 'Bo Nanapeel',
-    7001 : 'N. Prisoned',
-    7002 : 'R.E. Leaseme',
-    7003 : 'Lemmy Owte',
-    7004 : 'T. Rapped',
-    7005 : 'Little Helphere',
-    7006 : 'Gimmy Ahand',
-    7007 : 'Dewin Tymme',
-    7008 : 'Ima Cagedtoon',
-    7009 : 'Jimmy Thelock',
+    9301 : "Phil Bettur",
+    9302 : "Emma Phatic",
+    9303 : "GiggleMesh",
+    9304 : "Anne Ville",
+    9305 : "Bud Erfingerz",
+    9306 : "J.S. Bark",
+    9307 : "Bea Sharpe",
+    9308 : "Otto Toon",
+    9309 : "Al Capella",
+    9310 : "Des Traction",
+    9311 : "Dee Version",
+    9312 : "Bo Nanapeel",
+    7001 : "N. Prisoned",
+    7002 : "R.E. Leaseme",
+    7003 : "Lemmy Owte",
+    7004 : "T. Rapped",
+    7005 : "Little Helphere",
+    7006 : "Gimmy Ahand",
+    7007 : "Dewin Tymme",
+    7008 : "Ima Cagedtoon",
+    7009 : "Jimmy Thelock",
 
     # Tutorial IDs start at 20000, and are not part of this table.
     # Don't add any Toon id's at 20000 or above, for this reason!
@@ -11547,6 +11568,9 @@ PolarPlaceEffect1 = NPCToonNames[3306] + ": Welcome to Polar Place!"
 PolarPlaceEffect2 = NPCToonNames[3306] + ": Try this on for size."
 PolarPlaceEffect3 = NPCToonNames[3306] + ": Your new look will only work in " + lTheBrrrgh + "."
 
+# Oak Street cheesy effect chat phrases
+GreenToonEffectMsg = NPCToonNames[5312] + ": You look Toontastic in green!"
+
 # LaserGrid game Labels
 LaserGameMine = "Skull Finder!"
 LaserGameRoll = "Matching"
@@ -12562,3 +12586,7 @@ InteractivePropTrackBonusTerms = {
 }
 
 PlayingCardUnknown = "Card Name is unknown"
+
+# No longer in use.
+#AllTrickOrTreatFounded = "Trick or Treat"
+#TrickOrTreatScavengerHuntCompleted = "Trick or Treat"

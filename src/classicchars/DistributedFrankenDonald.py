@@ -1,6 +1,6 @@
 """DistributedFrankenDonald module: contains the DistributedFrankenDonald class"""
 
-from pandac.PandaModules import *
+from toontown.toonbase.ToontownModules import *
 import DistributedCCharBase
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import ClassicFSM, State
