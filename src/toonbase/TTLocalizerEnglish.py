@@ -5,10 +5,6 @@ from otp.otpbase import OTPLocalizer as OL
 #for key in OL.SpeedChatStaticTextCommon.keys():
 #    OL.SpeedChatStaticText[key] = OL.SpeedChatStaticTextCommon[key]
 
-# To make sure the language checker is working
-# DO NOT TRANSLATE THIS
-ExtraKeySanityCheck = "Ignore me"
-
 # commit strings
 # No longer in use.
 #commitmanString = "bugfix! I changed this"
@@ -169,8 +165,10 @@ ToontownCentral   = ("to",     "in",     lToontownCentral)
 TheBrrrgh         = ("to",     "in",     lTheBrrrgh)
 MinniesMelodyland = ("to",     "in",     lMinniesMelodyland)
 DaisyGardens      = ("to",     "in",     lDaisyGardens)
-OutdoorZone       = ("to",     "in", lOutdoorZone)
+#ConstructionZone = ("to the", "in the", "Construction Zone")
+OutdoorZone       = ("to",     "in",     lOutdoorZone)
 FunnyFarm         = ("to the", "in the", "Funny Farm")
+#GoofyStadium     = ("to",     "in",     "Goofy Stadium")
 GoofySpeedway     = ("to",     "in",     lGoofySpeedway)
 DonaldsDreamland  = ("to",     "in",     lDonaldsDreamland)
 BossbotHQ         = ("to",     "in",     "Bossbot HQ")
@@ -10861,6 +10859,7 @@ TipDict = {
     "You must complete your Sellbot Disguise before visiting the V.P.",
     "You must complete your Cashbot Disguise before visiting the C.F.O.",
     "You must complete your Lawbot Disguise before visiting the Chief Justice.",
+    "You must complete your Bossbot Disguise before visiting the C.E.O.",
     "You can jump on Cog Goons to temporarily disable them.",
     "Collect Cog Merits by defeating Sellbot Cogs in battle.",
     "Collect Cogbucks by defeating Cashbot Cogs in battle.",
@@ -10888,6 +10887,7 @@ TipDict = {
     "Wait until the C.F.O. is dizzy to throw a safe, or he will use it as a helmet! Hit the helmet with another safe to knock it off.",
     "Earn Lawbot disguise suit parts as rewards for completing ToonTasks for Professor Flake.",
     "It pays to be puzzled: the virtual Cogs in Lawbot HQ won't reward you with Jury Notices.",
+    "Earn Bossbot disguise suit parts as rewards for completing ToonTasks for Shep Ahoy.",
     ),
   TIP_ESTATE : (
     # Doodles
@@ -11066,6 +11066,171 @@ FishSpeciesNames = {
     34 : ( "Devil Ray",
            ),
     }
+
+FishFirstNames = (
+    "", 
+    "Angel", 
+    "Artic", 
+    "Baby", 
+    "Bermuda", 
+    "Big", 
+    "Brooke", 
+    "Bubbles", 
+    "Buster", 
+    "Candy", 
+    "Captain", 
+    "Chip", 
+    "Chub", 
+    "Coral", 
+    "Doctor", 
+    "Dusty", 
+    "Emperor", 
+    "Fangs", 
+    "Fat", 
+    "Fishy", 
+    "Flipper", 
+    "Flounder", 
+    "Freckles", 
+    "Honey", 
+    "Jack", 
+    "King", 
+    "Little", 
+    "Marlin", 
+    "Miss", 
+    "Mister", 
+    "Peaches", 
+    "Pinky", 
+    "Prince", 
+    "Princess", 
+    "Professor", 
+    "Puffy", 
+    "Queen", 
+    "Rainbow", 
+    "Ray", 
+    "Rosy", 
+    "Rusty", 
+    "Salty", 
+    "Sam", 
+    "Sandy", 
+    "Scales", 
+    "Sharky", 
+    "Sir", 
+    "Skippy", 
+    "Slipper", 
+    "Snapper", 
+    "Speck", 
+    "Spike", 
+    "Spotty", 
+    "Star", 
+    "Sugar", 
+    "Super", 
+    "Tiger", 
+    "Tiny", 
+    "Whiskers",
+    )
+
+FishLastPrefixNames = (
+    "", 
+    "Beach", 
+    "Black", 
+    "Blue", 
+    "Boar", 
+    "Bull", 
+    "Cat", 
+    "Deep", 
+    "Double", 
+    "East", 
+    "Fancy", 
+    "Flaky", 
+    "Flat", 
+    "Fresh", 
+    "Giant", 
+    "Gold", 
+    "Golden", 
+    "Gray", 
+    "Green", 
+    "Hog", 
+    "Jabber", 
+    "Jelly", 
+    "Lady", 
+    "Leather", 
+    "Lemon", 
+    "Long", 
+    "Northern", 
+    "Ocean", 
+    "Octo", 
+    "Oil", 
+    "Pearl", 
+    "Puff", 
+    "Red", 
+    "Ribbon", 
+    "River", 
+    "Rock", 
+    "Ruby", 
+    "Rudder", 
+    "Salt", 
+    "Sea", 
+    "Silver", 
+    "Snorkel", 
+    "Sole", 
+    "Southern", 
+    "Spikey", 
+    "Surf", 
+    "Sword", 
+    "Tiger", 
+    "Triple", 
+    "Tropical", 
+    "Tuna", 
+    "Wave", 
+    "Weak", 
+    "West", 
+    "White", 
+    "Yellow",
+    )
+
+FishLastSuffixNames = (
+    "",
+    "ball",
+    "bass",
+    "belly",
+    "bug",
+    "burglar",
+    "butter",
+    "claw",
+    "cobbler",
+    "crab",
+    "croaker",
+    "drum",
+    "fin",
+    "fish",
+    "flapper",
+    "flipper",
+    "ghost",
+    "grunt",
+    "head",
+    "jacket",
+    "jumper",
+    "mackerel",
+    "moon",
+    "mouth",
+    "mullet",
+    "neck",
+    "nose",
+    "perch",
+    "roughy",
+    "runner",
+    "sail",
+    "shark",
+    "shell",
+    "silk",
+    "slime",
+    "snapper",
+    "stink",
+    "tail",
+    "toad",
+    "trout",
+    "water",
+    )
 
 CogPartNames = (
     "Upper Left Leg", "Lower Left Leg", "Left Foot",
@@ -12509,8 +12674,8 @@ CogdoMazeMinionHint = "Minions will drop bonus Memos!"
 CogdoMazeGameTitle = "Mover & Shaker\nField Office"
 CogdoMazeGameInstructions = "The big Mover & Shaker Cogs have the code to open the door. Defeat them with your water balloons in order to get it!"
 CogdoMazeIntroMovieDialogue = (("This is the Toon Resistance! The Movers & Shakers\nhave our Jokes, and they've locked the exit!",),
-                               ('Grab water balloons at coolers, and throw them at Cogs!\nSmall Cogs drop Jokes, BIG COGS open the exit.',),
-                               ('The more Jokes you rescue, the bigger your Toon-Up\nat the end. Good luck!',))
+                               ("Grab water balloons at coolers, and throw them at Cogs!\nSmall Cogs drop Jokes, BIG COGS open the exit.",),
+                               ("The more Jokes you rescue, the bigger your Toon-Up\nat the end. Good luck!",))
 CogdoMazeGameDoorOpens = "THE EXIT IS OPEN FOR 60 SECONDS!\nGET THERE FAST FOR A BIGGER TOON-UP"
 CogdoMazeGameLocalToonFoundExit = "The exit will open when\nyou've busted all four BIG COGS!"
 CogdoMazeGameWaitingForToons = "Waiting for other Toons..."
@@ -12529,13 +12694,13 @@ CogdoFlyingGameInstructions = "Fly through the Legal Eagles' lair. Watch out for
 CogdoFlyingIntroMovieDialogue = (("You won't ruffle our feathers, Toons! We're destroying barrels of your Laff, and you cannot stop us!",
                                   "A flock of Toons! We're crushing barrels of your Laff in our %s, and there's nothing you can do about it!" % CogdoStomperName,
                                   "You can't egg us on, Toons! We're powering our offices with your Laff, and you're powerless to stop us!"),
-                                 ('This is the Toon Resistance! A little bird told me you can use propellers to fly around, grab Barrel Destruction Memos, and keep Laff from being destroyed! Good luck, Toons!',
-                                  'Attention Toons! Wing it with a propeller and collect Barrel Destruction Memos to keep our Laff from being stomped! Toon Resistance out!',
-                                  'Toon Resistance here! Cause a flap by finding propellers, flying to the Barrel Destruction Memos, and keeping our Laff from being smashed! Have fun!'),
+                                 ("This is the Toon Resistance! A little bird told me you can use propellers to fly around, grab Barrel Destruction Memos, and keep Laff from being destroyed! Good luck, Toons!",
+                                  "Attention Toons! Wing it with a propeller and collect Barrel Destruction Memos to keep our Laff from being stomped! Toon Resistance out!",
+                                  "Toon Resistance here! Cause a flap by finding propellers, flying to the Barrel Destruction Memos, and keeping our Laff from being smashed! Have fun!"),
                                  ("Squawk! I'm a Silver Sprocket Award winner, I don't need this!",
-                                  'Do your best, Toons! You will find us to be quite talon-ted!',
+                                  "Do your best, Toons! You will find us to be quite talon-ted!",
                                   "We'll teach you to obey the pecking order, Toons!"))
-CogdoFlyingGameWaiting = "Waiting for other Toons%s'"
+CogdoFlyingGameWaiting = "Waiting for other Toons%s"
 CogdoFlyingGameFuelLabel = "Fuel"
 CogdoFlyingGameLegalEagleTargeting = "A Legal Eagle has noticed you!"
 CogdoFlyingGameLegalEagleAttacking = "Incoming Eagle!"

@@ -7,10 +7,6 @@ from otp.otpbase import OTPLocalizer as OL
 #for key in OL.SpeedChatStaticTextCommon.keys():
 #    OL.SpeedChatStaticText[key] = OL.SpeedChatStaticTextCommon[key]
 
-# To make sure the language checker is working
-# DO NOT TRANSLATE THIS
-ExtraKeySanityCheck = "Ignore-me"
-
 # commit strings
 # No longer in use.
 #commitmanString = "bugfix! I changed this"
@@ -2568,7 +2564,7 @@ SpokenMoods = {
                 ],
     'restlessness': ["Estou tããããão impaciente!!!",],
     'playfulness': ["Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar...",
-                    "Brinque comigo ou eu arrancarei algumas flores!",,
+                    "Brinque comigo ou eu arrancarei algumas flores!",
                     "Vamos dar uma volta por aí e aí e aí e aí e aí e aí...",
                     ],
     'loneliness': ["Onde você esteve?",
@@ -2580,10 +2576,10 @@ SpokenMoods = {
                 "Eu preciso ir para a Terra do Sonho!",
                 ],
     'confusion': ["Onde estou? De novo, quem é você?",
-                  "De novo, o que é Toon-up?",
+                  "De novo, o que é Toonar?",
                   "Opa, eu estou entre você e os Cogs! Fuja!",
                   ],
-    'anger': ["... e você ainda se pergunta por que eu nunca lhe dei um Toon-up?!!!",
+    'anger': ["... e você ainda se pergunta por que eu nunca lhe dei um Toonar?!!!",
               "Você sempre se esquece de mim!",
               "Você ama suas piadas mais do que a mim!",
               ],
@@ -5711,7 +5707,7 @@ SillyPhase3Chatter = [
 SillyPhase4Chatter = [
         "Os hidrantes tornam seus Itens de Esguicho mais eficazes!",
         "As caixas de correio fornecem um aperfeiçoamento especial aos seus Itens de Arremesso!",
-        "Aquelas Lixeiras doidas podem dar a você um Toon-up!",
+        "Aquelas Lixeiras doidas podem dar a você um Toonar!",
         "Os objetos da rua podem lhe ajudar na batalha!",
         "Eu sei que vamos recuperar o Medidor de Bobagens logo!",
         "Aproveite a Toontown bobinha!",
@@ -5898,10 +5894,10 @@ LauncherPhaseNames = {
     6   : "Bairros I",
     7   : Cog + " Edifícios dos",
     8   : "Bairros II",
-    9   : Sellbot + " Quartel dos",
-    10  : Cashbot + " Quartel dos",
-    11  : Lawbot + " Quartel dos",
-    12  : Bossbot + " Quartel dos",
+    9   : lSellbotHQ,
+    10  : lCashbotHQ,
+    11  : lLawbotHQ,
+    12  : lBossbotHQ,
     13  : "Festas",
     }
 
@@ -5991,8 +5987,8 @@ PartyDateFormat = "%(mm)s %(dd)d, %(yyyy).4d" # Dec 8, 2008
 PartyTimeFormat = "%d:%.2d %s" # 1:45 pm
 PartyTimeFormatMeridiemAM = "am"
 PartyTimeFormatMeridiemPM = "pm"
-PartyCanStart = "É Hora de Festejar! Clique em Start Party (Iniciar Festa) na sua página Shticker Book Hosting (Hospedando do Livro de Brincadeiras)!"
-PartyHasStartedAcceptedInvite = '%s, a festa começou! Clique no anfitrião e em "Ir à Festa" na página Shticker Book Invites (Convites do Livro de Brincadeiras).'
+PartyCanStart = "É Hora de Festejar! Clique em Start Party (Iniciar Festa) na sua página Álbum Toon Hosting (Hospedando do Livro de Brincadeiras)!"
+PartyHasStartedAcceptedInvite = '%s, a festa começou! Clique no anfitrião e em "Ir à Festa" na página Álbum Toon Invites (Convites do Livro de Brincadeiras).'
 PartyHasStartedNotAcceptedInvite = '%s, a festa começou! Você também pode ir, teletransportando-se para o anfitrião.'
 
 EventsPageName = "Eventos"
@@ -10385,8 +10381,8 @@ BlockerLoadingTexts = [
     "Assando crostas de torta",
     "Aquecendo recheio de torta",
     "Carregando Doodle chow",
-    "Alinhando Jungle Vines",
-    "Soltando as aranhas que rastejam pelas jungle vines",
+    "Alinhando cipós da Selva",
+    "Soltando as aranhas que rastejam pelas cipós da Selva",
     "Plantando sementes de flores que esguicham",
     "Esticando trampolins",
     "Reunindo porcos",
@@ -10397,7 +10393,7 @@ BlockerLoadingTexts = [
     "Colocando a placa 'Em construção' no Bosque de Bolotas",
     "Andando como o Pato Donald",
     "Ensinando novos passos a hidrantes dançantes",
-    "Amarrando Shticker Books",
+    "Amarrando Álbum Toons",
     "Analyzing quacks",
     "Colhendo balinhas",
     "Esvaziando baldes de peixe",
@@ -10573,8 +10569,8 @@ TipDict = {
     "Espere até que o Diretor Financeiro esteja tonto para lançar um cofre, senão ele vai usá-lo como capacete! Acerte o capacete com outro cofre para derrubá-lo.",
     "Ganhe peças de disfarce de Robô da Lei como recompensa de Tarefas Toon pelo Professor Floco.",
     "Vale a pena a confusão: os Cogs virtuais no Quartel dos Robôs da Lei não dão Avisos de Júri de recompensa.",
-    " Robô Mercenário produz e distribui a sua própia moeda, Cogbucks, em três formas diferentes: Moedas, Dólar, e lingotes.",
-    " Aguarde até que o Diretor Financeiro fique doido para lançar um seguro ou o utilize-o como um capacete! Acerte no capacete com outro seguro para pegá-lo.",
+    "Robô Mercenário produz e distribui a sua própia moeda, Cogbucks, em três formas diferentes: Moedas, Dólar, e lingotes.",
+    "Aguarde até que o Diretor Financeiro fique doido para lançar um seguro ou o utilize-o como um capacete! Acerte no capacete com outro seguro para pegá-lo.",
     "O Robô da Lei obtém as partes do traje como recompensa ao concluir a TarefaToon para o Professor Floco.",
     ),
   TIP_ESTATE : (
@@ -12296,7 +12292,7 @@ SillySurgeTerms = {
     }
 # Interactive Prop Text
 InteractivePropTrackBonusTerms = {
-    0:  "Super Toon-Up",
+    0:  "Super Toonar",
     1:  "",
     2:  "",
     3:  "",
