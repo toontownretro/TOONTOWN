@@ -2986,7 +2986,7 @@ MoviePetSOSTrickSucceedBoy = "Good boy!"
 MoviePetSOSTrickSucceedGirl = "Good girl!"
 
 # MovieSuitAttacks.py
-MovieSuitCancelled = "CANCELLED\nCANCELLED\nCANCELLED"
+MovieSuitCancelled = "CANCELED\nCANCELED\nCANCELED"
 
 # RewardPanel.py
 RewardPanelToonTasks = "ToonTasks"
@@ -3727,7 +3727,7 @@ SuitAttackTaunts = {
                     "A perfect imprint every time.",
                     "I want to stamp you out.",
                     "You must be RETURNED TO SENDER.",
-                    "You've been CANCELLED.",
+                    "You've been CANCELED.",
                     "You have a PRIORITY delivery.",
                     "I'll make sure you RECEIVED my message.",
                     "You're not going anywhere - you have POSTAGE DUE.",
@@ -3805,7 +3805,7 @@ SuitAttackTaunts = {
              "My attacks will make your head spin!",
              ],
     'Synergy': ["I'm taking this to committee.",
-                "Your project's been cancelled.",
+                "Your project's been canceled.",
                 "Your budget's been cut.",
                 "We're restructuring your division.",
                 "I put it to a vote, and you lose.",
@@ -4698,7 +4698,7 @@ DaisyChatter = (
         "If you see sand under a plant it needs water or it will wilt!"
         ],
         [ # Goodbyes
-        "I'm going to Melody Land to see %s!" % Minnie,
+        "I'm going to Melodyland to see %s!" % Minnie,
         "I'm late for my picnic with %s!" % Donald,
         "I think I'll go swimming at "+lDonaldsDock+".",
         "Oh, I'm a little sleepy. I think I'll go to Dreamland.",
@@ -5002,7 +5002,7 @@ GoofyChatter = (
         "At Goofy's Gag Shops, every pie in the face is guaranteed to make a laugh or you get your jellybeans back!"
         ],
         [ # Goodbyes
-        "I'm going to Melody Land to see %s!" % Mickey,
+        "I'm going to Melodyland to see %s!" % Mickey,
         "Gosh, I'm late for my game with %s!" % Donald,
         "I think I'll go swimming at "+lDonaldsDock+".",
         "It's time for a nap. I'm going to Dreamland.",
@@ -5074,7 +5074,7 @@ GoofySpeedwayChatter = (
         "At Goofy's Gag Shops, every pie in the face is guaranteed to make a laugh or you get your jellybeans back!"
         ],
         [ # Goodbyes
-        "I'm going to Melody Land to see %s!" % Mickey,
+        "I'm going to Melodyland to see %s!" % Mickey,
         "Gosh, I'm late for my game with %s!" % Donald,
         "I think I'll go swimming at "+lDonaldsDock+".",
         "It's time for a nap. I'm going to Dreamland.",
@@ -5126,7 +5126,7 @@ DonaldChatter = (
         "Quack.",
         ],
         [ # Goodbyes
-        "I'm going to Melody Land to see %s!" % Minnie,
+        "I'm going to Melodyland to see %s!" % Minnie,
         "Gosh, I'm late for my date with %s!" % Daisy,
         "I think I'll go swimming at my dock.",
         "I think I'll take my boat for a spin at my dock.",
@@ -6016,8 +6016,8 @@ EventsPageCalendarTabName = "Calendar"
 EventsPageCalendarTabParty = "Party"
 EventsPageToontownTimeIs = "TOONTOWN TIME IS"
 EventsPageConfirmCancel = "If you cancel, you will get a %d%% refund. Are you sure you want to cancel your party?"
-EventsPageCancelPartyResultOk = "Your party was cancelled and you got %d jellybeans back!"
-EventsPageCancelPartyResultError = "Sorry, your party was not cancelled."
+EventsPageCancelPartyResultOk = "Your party was canceled and you got %d jellybeans back!"
+EventsPageCancelPartyResultError = "Sorry, your party was not canceled."
 EventsPageCancelPartyAlreadyRefunded = "Your party was never started. Check your mailbox for your refund!"
 EventsPageTooLateToStart = "Sorry, it is too late to start your party. You can cancel it and plan another one."
 EventsPagePublicPrivateChange = "Changing your party's privacy setting..."
@@ -6652,7 +6652,7 @@ CalendarEndOf = "End of "
 CalendarPartyGetReady = "Get ready!"
 CalendarPartyGo = "Go party!"
 CalendarPartyFinished = "It's over..."
-CalendarPartyCancelled = "Cancelled."
+CalendarPartyCancelled = "Canceled."
 CalendarPartyNeverStarted = "Never Started."
 
 # NPCFriendPanel.py
@@ -7629,15 +7629,10 @@ QuestScriptTutorialMickey_3 = "Tutorial Tom will tell you all about the Cogs.\aG
 QuestScriptTutorialMickey_4 = "Come here! Use the arrow keys to move."
 
 # These are needed to correspond to the Japanese gender specific phrases
+#
 QuestScriptTutorialMinnie_1 = "Toontown has a new citizen! Do you have some extra gags?"
 QuestScriptTutorialMinnie_2 = "Sure, %s!"
 QuestScriptTutorialMinnie_3 = "Tutorial Tom will tell you all about the Cogs.\aGotta go!"
-
-# These are needed to correspond to the Japanese gender specific phrases
-#
-#QuestScriptTutorialMinnie_1 = "Toontown has a new citizen! Do you have some extra gags?"
-#QuestScriptTutorialMinnie_2 = "Sure, %s!"
-#QuestScriptTutorialMinnie_3 = "Tutorial Tom will tell you all about the Cogs.\aGotta go!"
 #
 
 #
@@ -8031,7 +8026,7 @@ ShoesStylesDescriptions = {
     'smb4' : "Yellow Toon Boots",
     'sfb2' : "Blue Square Boots",
     'sfb3' : "Green Hearts Boots",
-    'sfb4' : "Grey Dots Boots",
+    'sfb4' : "Gray Dots Boots",
     'sfb5' : "Orange Stars Boots",
     'sfb6' : "Pink Stars Boots",
     'slf1' : "Loafers",
@@ -12519,7 +12514,7 @@ AwardNotifyOldItems = "There are still awards waiting in your mailbox for you to
 # MailboxScreen.py
 InviteInvitation = "the invitation"
 InviteAcceptInvalidError = "The invitation is no longer valid."
-InviteAcceptPartyInvalid = "That party has been cancelled."
+InviteAcceptPartyInvalid = "That party has been canceled."
 InviteAcceptAllOk = "The host has been informed of your reply."
 InviteRejectAllOk = "The host has been informed that you declined the invitation."
 
