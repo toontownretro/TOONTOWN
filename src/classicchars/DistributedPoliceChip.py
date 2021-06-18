@@ -1,15 +1,14 @@
 """DistributedPoliceChip module: contains the DistributedPoliceChip class"""
 
 from toontown.toonbase.ToontownModules import *
-import DistributedCCharBase
+from . import DistributedCCharBase
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import ClassicFSM, State
 from direct.fsm import State
 from toontown.classicchars import DistributedChip
-import CharStateDatas
+from . import CharStateDatas
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase import TTLocalizer
-import DistributedCCharBase
 
 class DistributedPoliceChip(DistributedChip.DistributedChip):
     """DistributedPoliceChip class"""

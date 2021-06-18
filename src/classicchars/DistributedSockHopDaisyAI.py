@@ -1,4 +1,4 @@
-"""DistributedSockHopDaisy module: contains the DistributedMickeyAI class"""
+"""DistributedSockHopDaisy module: contains the DistributedDaisyAI class"""
 
 from otp.ai.AIBaseGlobal import *
 from toontown.classicchars import DistributedDaisyAI
@@ -8,13 +8,13 @@ from direct.fsm import State
 from direct.task import Task
 import random
 from toontown.toonbase import ToontownGlobals
-import DistributedCCharBaseAI
-import CharStateDatasAI
+from . import DistributedCCharBaseAI
+from . import CharStateDatasAI
 from toontown.toonbase import TTLocalizer
 
-class DistributedSockHopDaisy(DistributedDaisyAI.DistributedDaisyAI):
+class DistributedSockHopDaisyAI(DistributedDaisyAI.DistributedDaisyAI):
 
-    notify = DirectNotifyGlobal.directNotify.newCategory("DistributedSuperGoofyAI")
+    notify = DirectNotifyGlobal.directNotify.newCategory("DistributedSockHopDaisyAI")
 
     def __init__(self, air):
         DistributedCCharBaseAI.DistributedCCharBaseAI.__init__(self, air, TTLocalizer.SockHopDaisy)

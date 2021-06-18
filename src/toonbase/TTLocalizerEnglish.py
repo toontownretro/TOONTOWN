@@ -4531,6 +4531,10 @@ VampireMickeyChatter = (
         ]
     )
 
+FieldOfficeMickeyChatter = [
+        "Have you heard about the new Mover & Shaker Field Offices?"
+        ]
+
 MinnieChatter = (
         [ # Greetings
         "Welcome to Melodyland.",
@@ -4592,10 +4596,6 @@ WinterMinnieCChatter = (
         "Mickey is taking me caroling!",
         ]
     )
-
-FieldOfficeMickeyChatter = [
-        "Have you heard about the new Mover & Shaker Field Offices?"
-        ]
 
 WinterMinnieDChatter = (
         [ # Greetings
@@ -4677,6 +4677,10 @@ WitchMinnieChatter = (
         ]
     )
 
+FieldOfficeMinnieChatter = [
+        "Everyone is talking about the new Mover & Shaker Field Offices!"
+        ]
+
 DaisyChatter = (
         [ # Greetings
         "Welcome to my garden!",
@@ -4704,10 +4708,6 @@ DaisyChatter = (
         "Oh, I'm a little sleepy. I think I'll go to Dreamland.",
         ]
     )
-
-FieldOfficeMinnieChatter = [
-        "Everyone is talking about the new Mover & Shaker Field Offices!"
-        ]
 
 ValentinesDaisyChatter = (
     [
@@ -9018,9 +9018,9 @@ SpecialEventNames = {
    11: "ToonTask Derby",
    12: "Save a Building Marathon",
    13: "Most Cogs Defeated",
-   15: "Operation Storm Sellbot Event",
+   15: "Operation: Storm Sellbot Event",
    16: "Most C.J.s Defeated",
-   17: "Operation Lawbots Lose Event",
+   17: "Operation: Lawbots Lose Event",
 }
 
 
@@ -12236,8 +12236,8 @@ KartRace_DoubleTickets = "Double Tickets"
 SellbotNerfHolidayStart = "Operation: Storm Sellbot is happening now! Battle the VP today!"
 SellbotNerfHolidayEnd = "Operation: Storm Sellbot has ended. Great work, Toons!"
 
-LawbotNerfHolidayStart = "Operation Lawbots Lose is happening now! Battle the CJ today!"
-LawbotNerfHolidayEnd = "Operation Lawbots Lose has ended. Great work, Toons!"
+LawbotNerfHolidayStart = "Operation: Lawbots Lose is happening now! Battle the CJ today!"
+LawbotNerfHolidayEnd = "Operation: Lawbots Lose has ended. Great work, Toons!"
 
 JellybeanTrolleyHolidayStart = "Double Bean Days for Trolley Games have begun!"
 JellybeanTrolleyHolidayEnd = "Double Bean Days for Trolley Games have ended!"
@@ -12255,7 +12255,7 @@ BankUpgradeHolidayStart = "Something Toontastic happened to your Jellybean Bank!
 HalloweenPropsHolidayStart = "It's Halloween in Toontown!"
 HalloweenPropsHolidayEnd = "Halloween has ended. Boo!"
 
-SpookyPropsHolidayStart = "Silly Meter spins Toontown into spooky mode!"
+SpookyPropsHolidayStart = "The Silly Meter spins Toontown into spooky mode!"
 
 BlackCatHolidayStart = "Create a Black Cat - Today only!"
 BlackCatHolidayEnd = "Black Cat day has ended!"
@@ -12268,7 +12268,7 @@ TopToonsMarathonEnd = "The Top Toons New Year's Day Marathon has ended."
 WinterDecorationsStart = "It's Winter Holiday time in Toontown!"
 WinterDecorationsEnd = "Winter Holiday is over - Happy New Year!"
 
-WackyWinterDecorationsStart = "Brrr! Silly Meter goes from silly to chilly!"
+WackyWinterDecorationsStart = "Brrr! The Silly Meter goes from silly to chilly!"
 
 WinterCarolingStart = "Caroling has come to Toontown. Sing for your Snowman Head - see the Blog for details!"
 
