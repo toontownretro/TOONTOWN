@@ -5754,23 +5754,23 @@ toontownDialogues = {
         (3, 2020) : ['Why hello there Albert and Newton', 'Halloween was pretty silly too!',],
         },
     AprilToonsPhasePreTopTopic : {
-        (1, 2020): ["Gadzooks! The Silly Meter has come back to life!",
+        (1, 2020) : ["Gadzooks! The Silly Meter has come back to life!",
                           "It\'s rising every day, and will reach the top soon!",
                           "When it does, something silly is sure to happen!",
                           "So get ready to get ridiculous!", ],
         },
     AprilToonsPhaseTopTopic : {
-        (1, 2020): ["The Silly Meter has hit the top!",
+        (1, 2020) : ["The Silly Meter has hit the top!",
                           "Doodles are talking, Estates are bouncy!",
                           "There\'s only one thing to say...",
                           "HAPPY APRIL TOONS!", ],
         },
     AprilToonsExtPhaseTopTopic : {
-        (1, 2020): ["The Silly Meter has hit the top!",
+        (1, 2020) : ["The Silly Meter has hit the top!",
                           "Doodles are talking, Estates are bouncy!", ],
         },
     AprilToonsPhasePostTopTopic : {
-        (1, 2020): ["April Toons is over!',
+        (1, 2020) : ["April Toons is over!",
                           "It's time for us to return to our lab.",
                           "But when things get REALLY crazy again...",
                           "The Silly Meter will return!", ],
