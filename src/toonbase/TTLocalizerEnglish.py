@@ -934,9 +934,9 @@ QuestDialogDict = {
              GREETING : "",
              LEAVING : "",
              },
-    2205 : { QUEST : "What's this?\aOh, I'd love to fill this prescription but the Cogs have been pilfering my supplies.\aIf you can get me the eyeglass frames off a flunky I can probably help you out.",
+    2205 : { QUEST : "What's this?\aOh, I'd love to fill this prescription but the Cogs have been pilfering my supplies.\aIf you can get me the eyeglass frames off a Flunky I can probably help you out.",
              LEAVING : "",
-             INCOMPLETE_PROGRESS : "Sorry. No flunky frames, no monocle.",
+             INCOMPLETE_PROGRESS : "Sorry. No Flunky frames, no monocle.",
              },
     2206: { QUEST : "Excellent!\aJust a second...\aYour prescription is filled. Please take this monocle straight to Captain Carl._where_",
             GREETING : "",
@@ -1528,19 +1528,19 @@ QuestDialogDict = {
     5253 : { GREETING: "",
              QUEST : "Yeah, that's my microphone all right.\aThanks for getting it for me, but...\aI really need my keyboard so I can tickle the ivories.\aI think one of those Corporate Raiders got my keyboard.",
              LEAVING : "",
-             INCOMPLETE_PROGRESS : "No luck finding my keboard?" },
+             INCOMPLETE_PROGRESS : "No luck finding my keyboard?" },
     5273 : { GREETING: "",
              QUEST : "Yeah, that's my microphone all right.\aThanks for getting it for me, but...\aI really need my keyboard so I can tickle the ivories.\aI think one of those Minglers got my keyboard.",
              LEAVING : "",
-             INCOMPLETE_PROGRESS : "No luck finding my keboard?" },
+             INCOMPLETE_PROGRESS : "No luck finding my keyboard?" },
     5274 : { GREETING: "",
              QUEST : "Yeah, that's my microphone all right.\aThanks for getting it for me, but...\aI really need my keyboard so I can tickle the ivories.\aI think one of those Loan Sharks got my keyboard.",
              LEAVING : "",
-             INCOMPLETE_PROGRESS : "No luck finding my keboard?" },
+             INCOMPLETE_PROGRESS : "No luck finding my keyboard?" },
     5275 : { GREETING: "",
              QUEST : "Yeah, that's my microphone all right.\aThanks for getting it for me, but...\aI really need my keyboard so I can tickle the ivories.\aI think one of those Legal Eagles got my keyboard.",
              LEAVING : "",
-             INCOMPLETE_PROGRESS : "No luck finding my keboard?" },
+             INCOMPLETE_PROGRESS : "No luck finding my keyboard?" },
     5254 : { GREETING: "",
              QUEST : "All right! Now I'm in business.\aIf only they hadn't taken my platform shoes...\aThose shoes probably ended up with a Mr. Hollywood, if I had to guess.",
              LEAVING : "",
@@ -4529,7 +4529,7 @@ VampireMickeyChatter = (
         ],
         [ # Goodbyes
         "I'm going to check out the cool Halloween decorations.",
-        "I'm going to MelodyLand to surprise "+Minnie+"!",
+        "I'm going to Melodyland to surprise "+Minnie+"!",
         "I'm going to sneak up on another Toon! Shhh!",
         "I'm going trick-or-treating!",
         "Shhh, sneak with me.",
@@ -5742,11 +5742,38 @@ EmceeDialoguePhase3_5Topic = "EmceeDialoguePhase3.5"
 EmceeDialoguePhase4Topic = "EmceeDialoguePhase4"
 EmceeDialoguePhase5Topic = "EmceeDialoguePhase5"
 EmceeDialoguePhase6Topic = "EmceeDialoguePhase6"
+
+AprilToonsPhasePreTopTopic = "AprilToonsPhasePreTopTopic"
+AprilToonsPhaseTopTopic = "AprilToonsPhaseTopTopic"
+AprilToonsExtPhaseTopTopic = "AprilToonsExtPhaseTopTopic"
+AprilToonsPhasePostTopTopic = "AprilToonsPhasePostTopTopic"
 toontownDialogues = {
    BoringTopic : { \
         (1, 2018)  : ['Hello Albert', 'It looks like the sillyness levels are rising', 'Yes and don\'t forget April Toons!'],
         (2, 2019) : ['Hello Newton', 'Yes I wonder how much the parties are contributing to all this',],
         (3, 2020) : ['Why hello there Albert and Newton', 'Halloween was pretty silly too!',],
+        },
+    AprilToonsPhasePreTopTopic : {
+        (1, 2020): ["Gadzooks! The Silly Meter has come back to life!",
+                          "It\'s rising every day, and will reach the top soon!",
+                          "When it does, something silly is sure to happen!",
+                          "So get ready to get ridiculous!", ],
+        },
+    AprilToonsPhaseTopTopic : {
+        (1, 2020): ["The Silly Meter has hit the top!",
+                          "Doodles are talking, Estates are bouncy!",
+                          "There\'s only one thing to say...",
+                          "HAPPY APRIL TOONS!", ],
+        },
+    AprilToonsExtPhaseTopTopic : {
+        (1, 2020): ["The Silly Meter has hit the top!",
+                          "Doodles are talking, Estates are bouncy!", ],
+        },
+    AprilToonsPhasePostTopTopic : {
+        (1, 2020): ["April Toons is over!',
+                          "It's time for us to return to our lab.",
+                          "But when things get REALLY crazy again...",
+                          "The Silly Meter will return!", ],
         },
     EmceeDialoguePhase1Topic : {
         (1, 2020) : [ 'Fellow Toons, this is the Silly Meter!',
@@ -6182,7 +6209,7 @@ MusicDdSz = "Waddling Way"
 MusicMmNbrhood = "Minnie's Melodyland"
 MusicGzPlaygolf = "Let's Play Golf!"
 MusicGsSz = "Goofy Speedway"
-MusicOzSz = "Chip n' Dale's Acres"
+MusicOzSz = "Chip 'n Dale's Acres"
 MusicGsRaceCc = "Downtown Driving"
 MusicGsRaceSs = "Ready, Set, Go!"
 MusicGsRaceRr = "Route 66"
@@ -6570,7 +6597,7 @@ DanceAnimLeft = "Left"
 # DistributedPartyCannonActivity.py
 PartyCannonActivityTitle = "Party Cannons"
 PartyCannonActivityInstructions = "Hit the clouds to change their color and bounce in the air! While IN THE AIR, you can USE THE ARROW KEYS to GLIDE."
-PartyCannonResults = "You collected %d jelly beans!\n\nNumber of Clouds Hit: %d"
+PartyCannonResults = "You collected %d jellybeans!\n\nNumber of Clouds Hit: %d"
 
 # DistributedPartyFireworksActivity.py
 FireworksActivityInstructions = "Hit the \"Page Up\" key to see better."
@@ -6580,13 +6607,13 @@ PartyFireworksAlreadyActive = "The fireworks show has already started."
 PartyFireworksAlreadyDone = "The fireworks show is over."
 
 # DistributedPartyTrampolineActivity.py
-PartyTrampolineJellyBeanTitle = "Jelly Beans Trampoline"
+PartyTrampolineJellyBeanTitle = "Jellybeans Trampoline"
 PartyTrampolineTricksTitle = "Tricks Trampoline"
 PartyTrampolineActivityInstructions = "Use the Control key to jump.\n\nJump when your Toon is at its lowest point on the trampoline to jump higher."
 PartyTrampolineActivityOccupied = "Trampoline in use."
 PartyTrampolineQuitEarlyButton = "Hop Off"
-PartyTrampolineBeanResults = "You collected %d jelly beans."
-PartyTrampolineBonusBeanResults = "You collected %d jelly beans, plus %d more for getting the Big Bean."
+PartyTrampolineBeanResults = "You collected %d jellybeans."
+PartyTrampolineBonusBeanResults = "You collected %d jellybeans, plus %d more for getting the Big Bean."
 PartyTrampolineTopHeightResults = "Your top height was %d ft."
 PartyTrampolineTimesUp = "Time's Up"
 PartyTrampolineReady = "Ready..."
@@ -7670,7 +7697,7 @@ QuestScript110_4 = "The map shows where you've been."
 QuestScript110_5 = "Turn the page to see your gags..."
 QuestScript110_6 = "Uh oh! You have no gags! I will assign you a task."
 QuestScript110_7 = "Turn the page to see your tasks."
-QuestScript110_8 = "Take a ride on the trolley, and earn jelly beans to buy gags!"
+QuestScript110_8 = "Take a ride on the trolley, and earn jellybeans to buy gags!"
 QuestScript110_9 = "To get to the trolley, go out the door behind me and head for the playground."
 QuestScript110_10 = "Now, close the book and find the trolley!"
 QuestScript110_11 = "Return to Toon HQ when you are done. Bye!"
@@ -9111,7 +9138,7 @@ CatalogAcceptPole = "You're now ready to go catch some bigger fish with your new
 CatalogAcceptPoleUnneeded = "You already have a better pole than this one!"
 CatalogAcceptChat = "You now have a new SpeedChat!"
 CatalogAcceptEmote = "You now have a new Emotion!"
-CatalogAcceptBeans = "You received some jelly beans!"
+CatalogAcceptBeans = "You received some jellybeans!"
 CatalogAcceptRATBeans = "Your Toon recruit reward has arrived!"
 CatalogAcceptPartyRefund = "Your party was never started. Here's your refund!"
 CatalogAcceptNametag = "Your new name tag has arrived!"
@@ -12603,7 +12630,7 @@ HolidayNamesInCalendar = {
    84: ("Big Wig Invasion", "Stop the Big Wig Cogs from invading Toontown!"),
    85: ("Big Cheese Invasion", "Stop the Big Cheese from invading Toontown!"),
    86: ("Down Sizer Invasion", "Stop the Down Sizer Cogs from invading Toontown!"),
-   87: ("Mover And Shaker Invasion", "Stop the Mover and Shaker Cogs from invading Toontown!"),
+   87: ("Mover & Shaker Invasion", "Stop the Mover & Shaker Cogs from invading Toontown!"),
    88: ("Double Talker Invasion", "Stop the Double Talkers Cogs from invading Toontown!"),
    89: ("Penny Pincher Invasion", "Stop the Penny Pinchers Cogs from invading Toontown!"),
    90: ("Name Dropper Invasion", "Stop the Name Dropper Cogs from invading Toontown!"),
@@ -12658,7 +12685,8 @@ CogdoMazeIntroMovieDialogue = (("This should give you Toons a shiver! We're powe
                                 "Want some good vibrations? Fill your balloons at the water coolers, splash the BIG Movers & Shakers, complete the PASS CODE, and find the way out! Good luck, Toons!"), 
                                 ("Hmph! I'm a Silver Sprocket Award winner, I don't need this!",
                                 "You're on shaky ground, Toons!", 
-                                "Before you know it, you'll all be trembling!"))
+                                "Before you know it, you'll all be trembling!"),
+                                )
 CogdoMazeGameDoorOpens = "The Pass Code opened the Exit!\nGet there before it's too late!"
 CogdoMazeGameLocalToonFoundExit = "This Exit will open when\nyou get the Pass Code from the Big Cogs!"
 CogdoMazeGameWaitingForToons = "Waiting for %d other Toons..."
@@ -12676,18 +12704,19 @@ CogdoMazeGameTitle = "Mover & Shaker\nField Office"
 CogdoMazeGameInstructions = "The big Mover & Shaker Cogs have the code to open the door. Defeat them with your water balloons in order to get it!"
 CogdoMazeIntroMovieDialogue = (("This is the Toon Resistance! The Movers & Shakers\nhave our Jokes, and they've locked the exit!",),
                                ("Grab water balloons at coolers, and throw them at Cogs!\nSmall Cogs drop Jokes, BIG COGS open the exit.",),
-                               ("The more Jokes you rescue, the bigger your Toon-Up\nat the end. Good luck!",))
-CogdoMazeGameDoorOpens = "THE EXIT IS OPEN FOR 60 SECONDS!\nGET THERE FAST FOR A BIGGER TOON-UP"
+                               ("The more Jokes you rescue, the bigger your Toon-Up\nat the end. Good luck!",),
+                               )
+CogdoMazeGameDoorOpens = "THE EXIT IS OPEN FOR 60 SECONDS!\nGET THERE FAST FOR A BIGGER TOON-UP!"
 CogdoMazeGameLocalToonFoundExit = "The exit will open when\nyou've busted all four BIG COGS!"
 CogdoMazeGameWaitingForToons = "Waiting for other Toons..."
 CogdoMazeGameTimeOut = "Oh no, time ran out! You lost your jokes."
 CogdoMazeGameTimeAlert = "Hurry up! 60 seconds to go!"
 CogdoMazeGameBossGuiTitle = "BIG COGS:"
-CogdoMazeFindHint = "Find a Water Cooler"
-CogdoMazeThrowHint = "Press 'Ctrl' to throw your water balloon"
-CogdoMazeSquashHint = "Falling objects pop your balloon"
-CogdoMazeBossHint = "Big Cogs take TWO hits to defeat"
-CogdoMazeMinionHint = "Smaller Cogs drop jokes"
+CogdoMazeFindHint = "Find a Water Cooler!"
+CogdoMazeThrowHint = "Press 'Ctrl' to throw your water balloon!"
+CogdoMazeSquashHint = "Falling objects pop your balloon!"
+CogdoMazeBossHint = "Big Cogs take TWO hits to defeat!"
+CogdoMazeMinionHint = "Smaller Cogs drop jokes!"
 
 # Cogdo Flying Game
 CogdoFlyingGameTitle = "Legal Eagle Offices"
@@ -12700,7 +12729,8 @@ CogdoFlyingIntroMovieDialogue = (("You won't ruffle our feathers, Toons! We're d
                                   "Toon Resistance here! Cause a flap by finding propellers, flying to the Barrel Destruction Memos, and keeping our Laff from being smashed! Have fun!"),
                                  ("Squawk! I'm a Silver Sprocket Award winner, I don't need this!",
                                   "Do your best, Toons! You will find us to be quite talon-ted!",
-                                  "We'll teach you to obey the pecking order, Toons!"))
+                                  "We'll teach you to obey the pecking order, Toons!"),
+                                  )
 CogdoFlyingGameWaiting = "Waiting for other Toons%s"
 CogdoFlyingGameFuelLabel = "Fuel"
 CogdoFlyingGameLegalEagleTargeting = "A Legal Eagle has noticed you!"

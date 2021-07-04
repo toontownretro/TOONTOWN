@@ -13,6 +13,8 @@ def handleGMName(name=''):
         prefix = TTLocalizer.GM_1
     elif name.find('$001')!=-1:
         prefix = TTLocalizer.GM_2
+    elif name.find('$002')!=-1:
+        prefix = TTLocalizer.GM_3
     else:
         # This is suspicious
         prefix = ''
@@ -26,6 +28,8 @@ def getGMType(name=''):
         return TTLocalizer.GM_1
     elif (name.find('$001')!=-1) or (name.find(TTLocalizer.GM_2)==0):
         return TTLocalizer.GM_2
+    elif (name.find('$002')!=-1) or (name.find(TTLocalizer.GM_3)==0):
+        return TTLocalizer.GM_3
     else:
         # This is suspicious
         return ''
