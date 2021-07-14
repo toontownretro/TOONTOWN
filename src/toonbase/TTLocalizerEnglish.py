@@ -5195,18 +5195,24 @@ HalloweenDreamlandChatter = (
         [ # Greetings
         "Happy Halloween!",
         "Happy Halloween, %!",
+        "Hi, I'm FrankenDonald!",
         ],
         [ # Comments
         "If you can play a trick on my friend Max, then you can Relax To The Max with a treat!",
-        "My dreams sure are spooky tonight!",
+        #"My dreams sure are spooky tonight!",
+        "Am I awake or dreaming?",
         "If you can play a trick on my friend Max, then you can Relax To The Max with a treat!",
-        "I must be dreaming, that lamp is a witch!",
+        #"I must be dreaming, that lamp is a witch!",
+        "I'm so scared, I can't fall asleep!",
         "If you can play a trick on my friend Max, then you can Relax To The Max with a treat!",
-        "Am I dreaming, or did that Toon have a pumpkin head?",
+        #"Am I dreaming, or did that Toon have a pumpkin head?",
+        "So this is what Dreamland looks like!",
         "If you can play a trick on my friend Max, then you can Relax To The Max with a treat!",
-        "When I wake up, I hope things aren't as spooky!",
+        #"When I wake up, I hope things aren't as spooky!",
+        "Boy, I'm sleepy!",
         "If you can play a trick on my friend Max, then you can Relax To The Max with a treat!",
-        "I hope I don't sleep through Halloween!",
+        #"I hope I don't sleep through Halloween!",
+        "I hope I don't sleep through Halloween this year!",
         "If you can play a trick on my friend Max, then you can Relax To The Max with a treat!",
         "I hope you are enjoying our Halloween fun!",
         ],
@@ -5239,7 +5245,7 @@ ValentinesDreamlandChatter = (
 )
 
 FieldOfficeDreamlandChatter = [
-    'I dreamed about something called a Field Office...'
+    "I dreamed about something called a Field Office..."
     ]
 
 HalloweenDonaldChatter = (

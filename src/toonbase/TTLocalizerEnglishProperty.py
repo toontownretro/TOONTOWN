@@ -28,6 +28,11 @@ EelevatorHopOff = 0.8
 #catalog/CatalogChatItemPicker.py
 CCIPmessagePickerCancel = 0.06
 
+#catalog/CatalogGenerator.py
+CGvalentine_month = 2
+CGvalentine_startday = 2
+CGvalentine_endday = 16
+
 #catalog/CatalogItemPanel.py
 CIPnameLabel = 1
 CIPwordwrapOffset = 0
