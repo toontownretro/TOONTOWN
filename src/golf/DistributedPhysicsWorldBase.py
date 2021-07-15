@@ -386,7 +386,7 @@ class DistributedPhysicsWorldBase:
             self.space.setCollideId(millGeom, 8) # GolfGlobals.WINDMILL_BASE_COLLIDE_ID
 
             #if not self.canRender:
-            #    myModel.remove()
+            #    myModel.removeNode()
 
             vPos = Point3(float(pos[0]), float(pos[1]), float(pos[2]) + 5)
             vHpr = Vec3(float(hpr[0]), float(hpr[1] + 90), float(hpr[2]) - 90)

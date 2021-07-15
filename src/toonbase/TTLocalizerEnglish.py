@@ -5257,7 +5257,8 @@ HalloweenDonaldChatter = (
         ],
         [ # Comments
         "If playing tricks is making you feel Rudderly Ridiculous, then go see Rudy for a treat!",
-        "But I wear a sailor costume every day!",
+        #"But I wear a sailor costume every day!",
+        "I'm dressed as a sailor!",
         "If playing tricks is making you feel Rudderly Ridiculous, then go see Rudy for a treat!",
         "Pumpkins make great lanterns!",
         "If playing tricks is making you feel Rudderly Ridiculous, then go see Rudy for a treat!",
@@ -5393,7 +5394,7 @@ WesternPlutoChatter = (
 WinterPlutoCChatter = (
         [# Greetings
         "Hi, I'm Pluto!",
-        "Welcome to the Brrgh, where it's winter all year!",
+        "Welcome to the Brrrgh, where it's winter all year!",
         "Happy Winter Holiday!",
         "Happy Winter Holiday, %",
         ],
@@ -5419,7 +5420,7 @@ WinterPlutoCChatter = (
 WinterPlutoDChatter = (
         [# Greetings
         "Hi, I'm Pluto!",
-        "Welcome to the Brrgh, where it's winter all year!",
+        "Welcome to the Brrrgh, where it's winter all year!",
         "Happy Winter Holiday!",
         "Happy Winter Holiday, %",
         ],
